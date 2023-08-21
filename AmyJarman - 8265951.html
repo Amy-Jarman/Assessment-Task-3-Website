@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+
+    <style>
+
+        body {
+            background-color: #f0faff;
+            margin: 0;
+            padding: 0;
+        }
+        /* Task 1 Styles*/
+        h1, h2, h3 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .task-heading {
+            text-decoration: underline;
+        }
+
+        .header-box {
+            border: 3px dotted #67a3bf;
+            padding: 10px;
+            margin: 1px auto;
+            max-width: 400px;
+            background-color: #aad8e6;
+            color: white;
+        }
+        
+        /* Task 2 Styles */
+        
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Task 2 & 3 Table style */
+
+        .table-container {
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: f0faff;
+            margin-top: 20px;
+            border: 3px dotted #67a3bf;
+        }
+
+        th, td {
+            border: 1px solid #aad8e6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #67a3bf;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c9e5f3;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #b0d4ed;
+        }
+
+        ul {
+            list-style: disc; 
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .image-source {
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        /* Task 4 Styles */
+        .button-container {
+            margin-top: 20px;
+            text-align: center; 
+        }
+
+        .button-clicked {
+            border: 5px rgb(76, 183, 233) solid;
+        }
+
+        #output {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .message {
+            font-weight: bold;
+            margin-top: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center; 
+        }
+
+        .image-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center; 
+        }
+
+        .image-container p {
+            font-size: 15px; 
+        }
+
+        .image-container img {
+            border: 2px solid #333;
+            box-sizing: border-box;
+        }
+
+        .image-container a {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Task 1:--> 
+    <h1 class="task-heading">Task 1:</h1>
+<div class="header-box">
+    <h1>8265951 Amy Jarman</h1>
+    <h2><i>COMP804: Web Security</i></h2>
+    <h3><i>Assignment 1, due 21st August 2023</i></h3>
+</div>
+    <br>
+
+    <!--Task 2:-->
+    <h1 class="task-heading">Task 2:</h1>
+
+<div class="table-container"> <!--Task 2 table -->
+    <table> 
+        <tr>
+            <th style="width: 80%;">Activity</th>
+            <th style="width: 20%;">Date</th>
+        </tr>
+        <tr>
+            <td style="width: 80%;">First day to enrol for re-enrolling (continuing students)</td>
+            <td style="width: 20%;">21 Nov 2022</td>
+        </tr>
+        <tr>
+            <td>Orientation</td>
+            <td>18 Jul 2023</td>
+        </tr>
+        <tr>
+            <td>Lectures Commence (weeks 1-9)</td>
+            <td>24 Jul - 22 Sep 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add subjects yourself</td>
+            <td>04 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add sbjects with Head of Students approval</td>
+            <td>11 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>
+                <strong>CENSUS DATE</strong>
+                <ul>
+                    <li>Fees due</li>
+                    <li>Last day to withdraw from subject/s without paying for them</li>
+                    <li>HECS/FEE HELP debt reporting date</li>
+                    <li>Last day to change HECS/FEE HELP billing option</li>
+                    <br>
+                </ul> 
+                <a href="https://www.uow.edu.au/student/dates/#d.en.186577" target="_blank">Learn more about Census date ></a>
+            </td>
+            <td>31 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Student Services and Amenities Fees Due</td>
+            <td>01 Sep 2023</td>
+        </tr>
+
+    </table>
+</div>
+    <br>
+
+    <!--Task 3-->
+    <h1 class="task-heading">Task 3:</h1>
+
+<div class="table-container"> <!--Task 3 Table-->
+    <table class="data-table"> 
+        <tr>
+            <th>Name</th>
+            <th>Web Attacks</th>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+                Malware<br>
+                <img src="malware.jpg" alt="malware image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://virusesremovaltips.blogspot.com/2015/04/gsave-extension-attached-on-browsers.html?spref=pi" target="_blank">here</a></span>
+            </td>
+            <td>Malware (malicious software) is any program or code that is created with the intent to do harm to a computer, network or server. There are many different types of malware including trojans, spyware, ransomware, viruses, worms, adware, and rootkits to name a few. 
+                <br>
+                <a href="https://www.crowdstrike.com/cybersecurity-101/cyberattacks/most-common-types-of-cyberattacks/#2.%20DoS%20Attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Denial of Service (DoS)<br>
+                <img src="dos.jpg" alt="DoS image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://www.computerworld.ch/security/ddos/github-uebersteht-maechtige-ddos-attacke-1480878.html" target="_blank">here</a></span>
+            </td>
+            <td>A Denial-of-Service (DoS) attack floods a network with false requests in order to disrupt business operations. During a DoS attack, users are unable to perform routine tasks such as accessing email, websites, accounts etc. DoS attacks cost organisations time and money in order to restore critical business operations. 
+                <br>
+                <a href="https://www.crowdstrike.com/cybersecurity-101/cyberattacks/most-common-types-of-cyberattacks/#2.%20DoS%20Attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Man-in-the-Middle (MITM) Attacks<br>
+                <img src="mitm.jpg" alt="Mitm image" width="150"> 
+                <br>
+                <span class="image-source">Image source: <a href="https://forum.huawei.com/enterprise/en/using-public-wi-fi-how-safe-you-are/thread/741633-867" target="_blank">here</a></span>
+            </td>
+            <td>Man-in-the-middle attacks are where an attacker gains access to eavesdrop and spy on data sent back and forth between two people, networks or computers. The attacker can modify or access the message before it reaches its destination. Using strong encryption on access points or VPNs can help mitigate this type of attack. 
+                <br>
+                <a href="https://www.fortinet.com/resources/cyberglossary/types-of-cyber-attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            SQL Injection<br>
+                <img src="sqlinjection.jpg" alt="SQL injection image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://www.datanumen.com/blogs/4-best-practices-avoid-sql-injection-attack-sql-server/" target="_blank">here</a></span>
+            </td>
+            <td> A Structured Query Language (SQL) injection is a common method of taking advantage of websites that depend on databases to serve their users. It uses a SQL query sent from the client to a database on the server. A command is inserted, or “injected”, into a data plane in place of a password or login, the server runs the command and the system is penetrated. 
+                <br>
+                <a href="https://www.fortinet.com/resources/cyberglossary/types-of-cyber-attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Cross-Site Scripting<br>
+                <img src="xss.png" alt="XSS image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://chefsecure.com/" target="_blank">here</a></span>
+            </td>
+            <td>Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. An attacker can use XSS to send a malicious script to an unsuspecting user.
+                <br>
+                <a href="https://owasp.org/www-community/attacks/xss/" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Phishing<br>
+                <img src="phishing.jpg" alt="Phishing image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://wtop.com/tech/2019/05/how-to-test-whether-your-employees-will-fall-for-a-phishing-scam/" target="_blank">here</a></span>
+            </td>
+            <td>Phishing uses email, SMS, phone, social media, and social engineering techniques to entice a victim to share sensitive information (such as passwords, account numbers etc) or to download a malicious file that will install viruses on their computer or phone. 
+                <br>
+                <a href="https://www.crowdstrike.com/cybersecurity-101/cyberattacks/most-common-types-of-cyberattacks/#2.%20DoS%20Attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            DNS Spoofing<br>
+                <img src="dns.jpg" alt="DNS image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://www.dreamstime.com/domain-transfer-icon-thin-line-isolated-illustration-linear-vector-web-design-sign-outline-concept-symbol-editable-stroke-image202619207" target="_blank">here</a></span>
+            </td>
+            <td>Domain Name System (DNS) spoofing is where a hacker alters DNS records to send traffic to a fake or “spoofed” website. Once on the fraudulent site, the victim may enter sensitive information that can be used or sold by the hacker.
+                <br>
+                <a href="https://www.fortinet.com/resources/cyberglossary/types-of-cyber-attacks" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Ransomware<br>
+                <img src="ransomware.jpg" alt="Ransomware image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://www.onlinewebfonts.com/icon/476329" target="_blank">here</a></span>
+            </td>
+            <td>
+                Ransomware is a form of malware. Cybercriminals use ransomware as a tool to steal data and essentially hold it hostage. They only release the data when they receive a ransom payment. Organizations most vulnerable to ransomware attacks hold sensitive data, such as personal information, financial data, and intellectual property.
+                <br>
+                <a href="https://www.fortinet.com/resources/cyberglossary/ransomware" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Drive-by Download Attacks<br>
+                <img src="drivebydownloads.png" alt="Drive-by-downloads image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://blog.httpcs.com/en/the-10-most-popular-cyberattacks-used-against-companies/" target="_blank">here</a></span>
+            </td>
+            <td>Drive-by download attacks refer to malicious programs that install to devices without the users consent. This also includes unintentional downloads of any files or bundled software onto computer devices. Masked in all corners of the web, these attacks cause even perfectly legitimate sites to spread this threat.
+                <br>
+                <a href="https://www.kaspersky.com/resource-center/definitions/drive-by-download" target="_blank">More info here</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">
+            Macro Viruses<br>
+                <img src="macrovirus.png" alt="Macrovirus image" width="150">
+                <br>
+                <span class="image-source">Image source: <a href="https://www.zenarmor.com/docs/network-security-tutorials/what-is-macro-virus" target="_blank">here</a></span>
+            </td>
+            <td>A macro virus is a computer virus written in the same macro language used to create software programs such as Microsoft Excel or Word. It centers on software applications and does not depend on the operating system (OS). As a result, it can infect any computer running any kind of OS, including Windows, macOS and Linux.
+                <br>
+                <a href="https://www.techtarget.com/searchsecurity/definition/macro-virus" target="_blank">More info here</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <!--Task 4-->
+    <h1 class="task-heading">Task 4:</h1>
+
+    <div class="button-container">
+        <button id="catButton">Cat</button>
+        <button id="dogButton">Dog</button>
+        <button id="frogButton">Frog</button>
+    </div>
+    <div id="output"></div>
+    <div class="message" id="catMessage"></div>
+    <div class="message" id="dogMessage"></div>
+    <div class="message" id="frogMessage"></div>
+
+    <!--Task 4 Images-->
+    <div class="image-container" id="catImage">
+        <img src="cat.jpg" alt="Cat Image" width="500">
+        <p><i>Image source:</i> <a href="https://www.rd.com/list/cutest-cat-breeds/" target="_blank"><i>https://www.rd.com/list/cutest-cat-breeds/</i></a></p>
+    </div>
+    <div class="image-container" id="dogImage">
+        <img src="dog.jpg" alt="Dog Image" width="500">
+        <p><i>Image source:</i> <a href="https://www.hdnicewallpapers.com/Wallpaper-Download/Dog/Beautiful-Dog-Puppy-4K-Wallpaper" target="_blank"></i>https://www.hdnicewallpapers.com/Wallpaper-Download/Dog/Beautiful-Dog-Puppy-4K-Wallpaper</i></a></p>
+    </div>
+    <div class="image-container" id="frogImage">
+        <img src="frog.jpg" alt="Frog Image" width="500">
+        <p><i>Image source:</i> <a href="https://www.hdnicewallpapers.com/Wallpaper-Download/Frog/Yellow-Frog-on-Leave" target="_blank"></i>https://www.hdnicewallpapers.com/Wallpaper-Download/Frog/Yellow-Frog-on-Leave</i></a></p>
+    </div>
+
+    <script>
+        const catButton = document.getElementById('catButton');
+        const dogButton = document.getElementById('dogButton');
+        const frogButton = document.getElementById('frogButton');
+        const catMessage = document.getElementById('catMessage');
+        const dogMessage = document.getElementById('dogMessage');
+        const frogMessage = document.getElementById('frogMessage');
+        const catImage = document.getElementById('catImage');
+        const dogImage = document.getElementById('dogImage');
+        const frogImage = document.getElementById('frogImage');
+        const output = document.getElementById('output');
+
+        function removeClickedClass(button) {
+            setTimeout(() => {
+                button.classList.remove('button-clicked');
+            }, 300);
+        }
+
+        catButton.addEventListener('click', () => {
+            output.textContent = 'User clicks cat'; 
+            output.style.textAlign = 'center';
+            catMessage.textContent = 'Cat is clicked';
+            catButton.classList.add('button-clicked');
+            removeClickedClass(catButton);
+            catMessage.style.textAlign = 'center'; // Center the message
+            dogMessage.textContent = ''; // Clear other messages
+            frogMessage.textContent = ''; // Clear other messages
+            catImage.style.display = 'block'; // Show cat image
+            dogImage.style.display = 'none'; // Hide other images
+            frogImage.style.display = 'none'; // Hide other images
+        });
+
+        dogButton.addEventListener('click', () => {
+            output.textContent = 'User clicks dog';
+            output.style.textAlign = 'center';
+            dogMessage.textContent = 'Dog is clicked';
+            dogButton.classList.add('button-clicked');
+            removeClickedClass(dogButton);
+            dogMessage.style.textAlign = 'center'; // Center the message
+            catMessage.textContent = ''; // Clear other messages
+            frogMessage.textContent = ''; // Clear other messages
+            dogImage.style.display = 'block'; // Show dog image
+            catImage.style.display = 'none'; // Hide other images
+            frogImage.style.display = 'none'; // Hide other images
+        });
+
+        frogButton.addEventListener('click', () => {
+            output.textContent = 'User clicks frog';
+            output.style.textAlign = 'center';
+            frogMessage.textContent = 'Frog is clicked';
+            frogButton.classList.add('button-clicked');
+            removeClickedClass(frogButton);
+            frogMessage.style.textAlign = 'center'; // Center the message
+            catMessage.textContent = ''; // Clear other messages
+            dogMessage.textContent = ''; // Clear other messages
+            frogImage.style.display = 'block'; // Show frog image
+            catImage.style.display = 'none'; // Hide other images
+            dogImage.style.display = 'none'; // Hide other images
+        });
+    </script>
+
+</body>
+</html>
